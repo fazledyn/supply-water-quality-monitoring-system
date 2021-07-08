@@ -3,4 +3,4 @@
 
 ### Basic Configurations
 **USBasp** PIN Configuation is as below
-![usbasp_config](/docs/atmega32_usbasap.png)
+![usbasp_config](/docs/atmega32_usbasp.png)
