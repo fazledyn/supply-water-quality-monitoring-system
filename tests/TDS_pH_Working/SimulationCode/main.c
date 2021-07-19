@@ -306,7 +306,7 @@ int main(void)
 		
 		sum = 0;
 		
-		for(int i = 0; i<5 ; i++){
+		for(int i = 0; i<100 ; i++){
 			ADCSRA |= (1<<ADSC);
 			
 			while(ADCSRA & (1<<ADSC)){;}
@@ -316,14 +316,14 @@ int main(void)
 			//float pH = -(5.7*pHvoltage) + 21.34;
 			//float pH = 3.5*pHvoltage;
 			//sum += (-1.76*pHvoltage+12.65);
-			if(pHvoltage <4.1){
+			if(pHvoltage >= 4.1){
 				sum += (6.7 + (pHvoltage/7.5));
 			}
 			else{
 				sum += (3.5 + (pHvoltage/7.5));
 			}
 		}
-		float pH = sum/5.0;
+		float pH = sum/100.0;
 		
 		Lcd4_Set_Cursor(1,6);
 		Lcd4_Write_String("pH: ");
