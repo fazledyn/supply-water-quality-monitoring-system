@@ -313,15 +313,10 @@ int main(void)
 			
 			//taking aref as = 4.5 V
 			float pHvoltage =  (ADCH<<2)*5.0/1024;
-			//float pH = -(5.7*pHvoltage) + 21.34;
+			float pH = -(5.7*pHvoltage) + 21.34;
 			//float pH = 3.5*pHvoltage;
 			//sum += (-1.76*pHvoltage+12.65);
-			if(pHvoltage >= 4.1){
-				sum += (6.7 + (pHvoltage/7.5));
-			}
-			else{
-				sum += (3.5 + (pHvoltage/7.5));
-			}
+			
 		}
 		float pH = sum/100.0;
 		
