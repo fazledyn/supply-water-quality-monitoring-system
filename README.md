@@ -1,4 +1,4 @@
-## Real-time Remote Based Supply Water Quality Testing System
+## Real-time Remote Based Supply Water Quality Monitoring System
 
 This project was done as a part of `CSE 316: Microcontroller, Microprocessor and Embedded System` course offered by BUET CSE. I, along with three other teammates: @mashiat, @rifat, @naeem worked on the project under the supervision of **Dr. A.B.M Alim Al Islam**.
 
